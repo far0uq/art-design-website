@@ -1,34 +1,19 @@
-TWO FILES MADE:
 
-->About.html
-->Artwork.html
+Forms, Tables and Pictures INTEGRATED.
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-• Headings, paragraph
--> Used Everywhere in both.
+1. Incorporated a Form into the website footer for newsletter subscription. Checkout artist.html to check it but will be added to all webpages.
 
-• Bold, italic, emphasis
--> Used in Artwork.html
+2. Tables used in pages:
+	-> artist.html
+	-> artist_profile.html
 
+3. Images added overall.
+	-> artist.html
+	-> artist_profile.html
+	images only added as placeholders since this page serves as a generic template that will be generated dynamically for each artist so dont need to make one for each artist. 
 
-• Line Breaks & Horizontal Rules
--> Used in Both.
-
-• Author Details
--> Used in Artwork.html
-
-
-• Ordered lists, Unordered List, Definition list, Nested List
--> Ordered Nested Lists used in About.html
--> Rest Used in Artwork.html
-
-• Creating links between pages
--> Used in Both.
-
-
-• Linking to other sites
--> Used in Footer of Artwork.html
-
-• Email links
--> Used in Footer of Artwork.html
+	More picture work done on:
+	-> artwork.html
+	-> painting.html

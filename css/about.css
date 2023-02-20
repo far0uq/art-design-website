@@ -1,0 +1,13 @@
+
+@font-face {
+    font-family: fontForWebsiteHeading;
+    src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-black.otf);
+}
+
+body > #color-section{
+    font-family: fontForWebsiteHeading;
+    width:75%;
+    margin:auto;
+    margin-top:40px;
+    background-color: rgb(243, 74, 41);
+}

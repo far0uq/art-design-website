@@ -1,0 +1,76 @@
+body {
+  margin: auto;
+}
+
+#footer {
+  background: #ebda9e;
+  display: flex;
+  justify-content: space-between;
+  font-family: myFirstFont;
+  padding: none;
+  height: 220px;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/AvenirLTProBlack.otf);
+}
+
+#footer li {
+  list-style: none;
+  position:relative;
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+#footer > ul {
+  margin-left: 15px;
+  margin-top: 65px;
+}
+
+#footer > #vertical {
+  border: 0.5px solid black;
+  height: 130px;
+  margin-top: 30px;
+  margin-left: 1050px;
+}
+
+#footer aside {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right:300px;
+}
+
+aside > #links {
+  margin-top: 0px;
+}
+
+aside a{
+    text-decoration: none;
+    color:rgb(103, 36, 9);
+}
+
+
+#footer > button {
+  background-color: #ebda9e;
+  color: black;
+  border: none;
+  position:absolute;
+  right:0px;
+  margin-top:30px;
+  transform: rotate(90deg);
+}
+
+aside > form > input[name = "email"]{
+    border: 0.5px solid whitesmoke;
+    height:30px;
+    width:200px;
+}
+
+aside > form > input[name = "subscribe"]{
+    border: none;
+    background-color:#ebda9e;
+    color:white;
+    padding-left:0px;
+    font-size: 20px;
+}

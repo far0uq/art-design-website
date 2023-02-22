@@ -1,31 +1,41 @@
-#header > div{
+#header > #bar-at-top{
     background-color: #ebda9e;
-    height:10px;
+    height:18px;
+}
+
+#header{
+    width: 100%;
 }
 
 #header > #menu{
     display: flex;
-    position: relative;
+    width:70%;
+    height:130px;
+    margin:auto;
 }
 
 #header > #menu > h1{
     font-family: fontForWebsiteHeading;
-    margin-left:120px;
-    margin-top:20px;
+    margin:auto;
+    width:80%;
     font-size:60px;
+}
+
+#header > #breadcrumbs{
+    border-top:1px solid black;
+    padding:20px;
 }
 
 #header > #menu ul{
     list-style-type: none;
     display:flex;
     justify-content: space-between;
-    position: absolute;
-    right:300px;
-    top:27px;
+    width:20%;
+    margin:auto;
 }
 
 #header > #menu li{
-    padding-right:15px;
+    padding-right:40px;
     font-family: fontForMenuItems;
 }
 
@@ -44,12 +54,3 @@
     src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-bold.otf);
 }
 
-#header > #breadcrumbs{
-    background-color: white;
-    margin-top:115px;
-}
-#header > #breadcrumbs > hr{
-    margin-top:40px;
-    background: black;
-    height:0.1px;
-}

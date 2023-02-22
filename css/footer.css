@@ -1,5 +1,6 @@
 body {
   margin: auto;
+  height:100%;
 }
 
 #footer {
@@ -9,6 +10,7 @@ body {
   font-family: myFirstFont;
   padding: none;
   height: 220px;
+  width:100%;
 }
 
 @font-face {

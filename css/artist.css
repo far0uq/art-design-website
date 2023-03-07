@@ -1,0 +1,81 @@
+.artist_block{
+    border-top: 1px solid black;
+    width:70%;
+    margin:auto;
+    padding:25px 0px;
+}
+
+body{
+    width:100%;
+}
+
+#filter-bar{
+    display: flex;
+    width:70%;
+    justify-content: space-between;
+    margin:25px auto;
+}
+
+#filter-bar > button{
+    border:2.5px solid black;
+    font-size:14px;
+    padding:0px 20px;
+    background-color:white;
+    font-family: fontForButton;
+}
+
+#filter-bar > p{
+    color: gray;
+    font-family:fontForArtistDetails;
+    font-size: 14px;
+}
+
+#filter-bar > button:hover{
+    background-color: black;
+    color:rgb(164, 234, 164);
+}
+
+.artist_block > h1 > a{
+    font-size: 25px;
+    font-family: fontForArtistNames;
+    color:black;
+    text-decoration: none;
+}
+
+.artist_block > h1{
+    margin:9px 0px 10px 0px;
+}
+
+.artist_block > h2{
+    font-family: fontForArtistCategory;
+    font-size: 16px;
+    margin:20px 0px 0px 0px;
+}
+
+.artist_block > p{
+    color:gray;
+    font-size: 12px;
+    font-family:fontForArtistDetails;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+@font-face {
+    font-family: fontForArtistNames;
+    src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-light.otf);
+}
+
+@font-face {
+    font-family: fontForArtistDetails;
+    src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-thin.otf);
+}
+
+@font-face {
+    font-family: fontForArtistCategory;
+    src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-medium.otf);
+}
+
+@font-face {
+    font-family: fontForButton;
+    src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-black.otf);
+}

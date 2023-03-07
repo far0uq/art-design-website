@@ -1,0 +1,17 @@
+ul + h1{
+    font-family: fontForWebsiteHeading;
+}
+
+h1 + p{
+    font-family: fontForParagraph;
+}
+
+@font-face {
+    font-family: fontForWebsiteHeading;
+    src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-bold.otf);
+}
+
+@font-face {
+    font-family: fontForParagraph;
+    src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-thin.otf);
+}

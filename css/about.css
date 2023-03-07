@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: fontForWebsiteHeading;
-    src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-black.otf);
+    src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-bold.otf);
 }
 
 body{
@@ -20,5 +20,6 @@ body > #color-section{
 body > #color-section > h1{
     width:70%;
     padding-top:30px;
+    font-size:35px;
     margin:auto;
 }

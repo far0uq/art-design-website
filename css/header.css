@@ -22,8 +22,19 @@
 }
 
 #header > #breadcrumbs{
-    border-top:1px solid black;
     padding:20px;
+    width:70%;
+    margin:auto;
+}
+
+#header > #breadcrumbs > span{
+    font-family: fontForBreadcrumbs;
+}
+
+#header hr{
+    background-color: black;
+    height: 0.0312em;
+    margin-bottom:0px;
 }
 
 #header > #menu ul{
@@ -35,6 +46,7 @@
 }
 
 #header > #menu li{
+    padding-top:17px;
     padding-right:40px;
     font-family: fontForMenuItems;
 }
@@ -54,3 +66,7 @@
     src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-bold.otf);
 }
 
+@font-face {
+    font-family: fontForBreadcrumbs;
+    src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-light.otf);
+}

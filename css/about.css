@@ -25,3 +25,21 @@ body > #color-section > h1{
     font-size:35px;
     margin:auto;
 }
+
+#main_body{
+    width:65%;
+    margin:50px auto auto auto;
+}
+
+#main_body > p{
+    margin-bottom: 50px;
+    font-size:20px;
+}
+
+#main_body section{
+    display:block;
+}
+
+#main_body .about_mod h1{
+    text-decoration: underline;
+}

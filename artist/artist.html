@@ -1,136 +1,156 @@
 <html>
-	<head>
-		<title>Artist | Ostania Art Gallery</title>
-		<meta charset="UTF-8">
- 		<meta name="author" content="John Doe">
+  <head>
+    <title>Artist | Ostania Art Gallery</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="John Doe" />
 
-         <link rel="stylesheet" href="../css/footer.css">
-		 <link rel="stylesheet" href="../css/header.css">
-		 <link rel="stylesheet" href="../css/about.css">
-		 <link rel="stylesheet" href="../css/artist.css">
-		 <script src = "../node_modules/jquery/dist/jquery.min.js"></script>
-		<script src = "../js/dynamic_menu.js"></script>
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/artist.css" />
+	<link rel="stylesheet" href="../css/filter.css" />
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../js/dynamic_menu.js"></script>
+	<script src = "../js/filter.js"></script>
+  </head>
 
-	</head>
+  <body>
+	<div id="filter-box">
+      <div id="first-row">
+        <div>Categories Filter</div>
+        <div></div>
+      </div>
+      <div class="filter-element">Cubanism</div>
+      <div class="filter-element">Realism</div>
+      <div class="filter-element">Surrealism</div>
+      <div class="filter-element">Contemporary</div>
+      <div class="filter-element">Spiritual</div>
+      <div id="apply" onclick = "ApplyFilter()">Apply</div>
+    </div>
+
+	<div id = "blur-area"></div>
 	
-	<body>
-		<div id = "header">
-			<div id = "bar-at-top"></div>
+    <div id="header">
+      <div id="bar-at-top"></div>
 
-			<div id = "menu">
-				<h1>Ostania Art Gallery</h1>
-				<ul>
-					<li><a href="#">Artists</a></li>
-					<li><a href="../artwork/artwork.html">Gallery</a></li>
-					<li><a href="../about.html">About</a></li>
-				<ul>
-			</div>
-			<div id = "line"></div>
-			<div id = "breadcrumbs"></div>
-			
-		</div>
-		
-		
-		<section id = "color-section" style = "background-color: rgb(164, 234, 164);">
-			<h1>Artists</h1>
-		</section>
+      <div id="menu">
+        <h1>Ostania Art Gallery</h1>
+        <ul>
+          <li><a href="#">Artists</a></li>
+          <li><a href="../artwork/artwork.html">Gallery</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </div>
+      <div id="line"></div>
+      <div id="breadcrumbs"></div>
+    </div>
 
-		<div id = "filter-bar">
-			<button>Filters</button>
-			<p>1 - 30 of 16,134 results</p>
-		</div>
-		
-		<div>
-			<table>
-                <tr>
-                    <div class = "artist_block">
-						<h2>Surrealism</h2>
-                        <h1><a href = "artist_profile.html">Farouq Haider</a></h1>
-                        <p>Pakistani, active 1970's</p>
-                    </div>
-                </tr>
-                <tr>
-                    <div class = "artist_block">
-						<h2>Realism</h2>
-                        <h1><a href = "#">Daniyal Mutahhar</a></h1>
-                        <p>British, 1883 - 1955</p>
-                    </div>
-                </tr>
-                <tr>
-                    <div class = "artist_block">
-						<h2>Abstract</h2>
-                        <h1><a href = "#">Hamza Shahid</a></h1>
-                        <p>German, 1910 - 2002</p>
-                    </div>
-                </tr>
-                <tr>
-                    <div class = "artist_block">
-						<h2>Abstract</h2>
-                        <h1><a href = "#">Faizan Wasif</a></h1>
-                        <p>Russian, 1920's</p>
-                    </div>
-                </tr>
-                <tr>
-                    <div class = "artist_block">
-						<h2>Expressionism</h2>
-                        <h1><a href = "#">Ali Hasnain</a></h1>
-                        <p>Polish, 1930 - 2017</p>
-                    </div>
-                </tr>
-                
+    <section id="color-section" style="background-color: rgb(164, 234, 164)">
+      <h1>Artists</h1>
+    </section>
 
-            </table>
-			
-		</div>
-		
-			
-		
-		<div id = "footer">
-			<ul>
-				<li>
-					<a>Artists</a>
-				</li>
-				<li>
-					<a>Artwork</a>
-				</li>
-				<li>
-					<a>About</a>
-				</li>
-			</ul>
+    <div id="filter-bar">
+      <button onclick = "OpenFilterMenu()">Filters</button>
+      <p>1 - 30 of 16,134 results</p>
+    </div>
 
-			<div id = "vertical"></div>
-			
-			<button><- To Top </button>
+    <div>
+      <table>
+        <tr>
+          <div class="artist_block">
+            <h2>Surrealism</h2>
+            <h1><a href="artist_profile.html">Farouq Haider</a></h1>
+            <p>Pakistani, active 1970's</p>
+          </div>
+        </tr>
+        <tr>
+          <div class="artist_block">
+            <h2>Realism</h2>
+            <h1><a href="#">Daniyal Mutahhar</a></h1>
+            <p>British, 1883 - 1955</p>
+          </div>
+        </tr>
+        <tr>
+          <div class="artist_block">
+            <h2>Abstract</h2>
+            <h1><a href="#">Hamza Shahid</a></h1>
+            <p>German, 1910 - 2002</p>
+          </div>
+        </tr>
+        <tr>
+          <div class="artist_block">
+            <h2>Abstract</h2>
+            <h1><a href="#">Faizan Wasif</a></h1>
+            <p>Russian, 1920's</p>
+          </div>
+        </tr>
+        <tr>
+          <div class="artist_block">
+            <h2>Expressionism</h2>
+            <h1><a href="#">Ali Hasnain</a></h1>
+            <p>Polish, 1930 - 2017</p>
+          </div>
+        </tr>
+      </table>
+    </div>
 
-			<aside>
-				
-				<br>
-					<form>
-						<label>Get the Newsletter</label>
-						<br>
-						<input type = "email" name = "email"/>
-						<input type = "button" name = "subscribe" value = ">">
-					</form>
+    <div id="footer">
+      <ul>
+        <li>
+          <a>Artists</a>
+        </li>
+        <li>
+          <a>Artwork</a>
+        </li>
+        <li>
+          <a>About</a>
+        </li>
+      </ul>
 
-					<a href="mailto:farooqhaider561@gmail.com">Get in touch.</a>
+      <div id="vertical"></div>
 
-					<div id = "links">
-					<a href = "https://www.instagram.com/">
-						<img src="../images/icons8-instagram-circle.svg" alt="insta_logo" width="35" height="35">
-					</a>
-					<a href = "https://www.facebook.com/">
-						<img src="../images/icons8-facebook.svg" alt="insta_logo" width="35" height="35">
-					</a>
-					<a href = "https://www.twitter.com/">
-						<img src="../images/icons8-twitter-circled.svg" alt="insta_logo" width="35" height="35">
-					</a>
-					</div>
-			</aside>
-			
-		</div>
-		
-		<script src = "../js/breadcrumbs.js"></script>
-		
-			
-	</body>
+      <button><- To Top</button>
+
+      <aside>
+        <br />
+        <form>
+          <label>Get the Newsletter</label>
+          <br />
+          <input type="email" name="email" />
+          <input type="button" name="subscribe" value=">" />
+        </form>
+
+        <a href="mailto:farooqhaider561@gmail.com">Get in touch.</a>
+
+        <div id="links">
+          <a href="https://www.instagram.com/">
+            <img
+              src="../images/icons8-instagram-circle.svg"
+              alt="insta_logo"
+              width="35"
+              height="35"
+            />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img
+              src="../images/icons8-facebook.svg"
+              alt="insta_logo"
+              width="35"
+              height="35"
+            />
+          </a>
+          <a href="https://www.twitter.com/">
+            <img
+              src="../images/icons8-twitter-circled.svg"
+              alt="insta_logo"
+              width="35"
+              height="35"
+            />
+          </a>
+        </div>
+      </aside>
+    </div>
+
+    <script src="../js/breadcrumbs.js"></script>
+  </body>
 </html>

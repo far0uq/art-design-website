@@ -1,80 +1,137 @@
 <html>
+  <head>
+    <head>
+      <title>About | Ostania Art Gallery</title>
+      <meta charset="UTF-8" />
+      <meta name="author" content="John Doe" />
+      <link rel="stylesheet" href="../css/footer.css" />
+      <link rel="stylesheet" href="../css/header.css" />
+      <link rel="stylesheet" href="../css/about.css" />
+      <link rel="stylesheet" href="../css/index.css" />
+      <link rel="stylesheet" href="../css/about-page.css" />
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="js/dynamic_menu.js"></script>
+    </head>
+  </head>
 
-<head>
-		<title>Ostania Art Gallery</title>
-		<meta charset="UTF-8">
- 		<meta name="author" content="John Doe">
-		<link rel="stylesheet" href="../css/footer.css">
-		<link rel="stylesheet" href="../css/header.css">
+  <body>
+    <div id="header">
+      <div id="bar-at-top"></div>
 
-	</head>
-	
-	
-	<body>
-	
-		<div id = "header">
-			<div id = "bar-at-top"></div>
+      <div id="menu">
+        <h1>Ostania Art Gallery</h1>
+        <ul>
+          <li><a href="artist/artist.html">Artists</a></li>
+          <li><a href="artwork/artwork.html">Artwork</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div id="line"></div>
+    </div>
 
-			<div id = "menu">
-				<h1>Ostania Art Gallery</h1>
-				<ul>
-					<li><a href="artist/artist.html">Artists</a></li>
-					<li><a href="artwork/artwork.html">Artwork</a></li>
-					<li><a href="#">About</a></li>
-					
-				<ul>
-			</div>
+    <div id="image_panel">
+      <img id="bfi" src="images/header_image.PNG" />
+      <div>
+        <p>Now on Display</p>
+        <p id="viewBtn">View</p>
+      </div>
+    </div>
 
-			<div id = "breadcrumbs"></div>
-			
-		</div>
-		
-    
+    <h1 id="beforeMarquee">Spend your evening at the OAG.</h1>
+    <div class="marquee">
+      <div class="marquee_content">Open 9:00 to 5:00  |  Open 9:00 to 5:00  |  Open 9:00 to 5:00  |  Open 9:00 to 5:00  |  Open 9:00 to 5:00  |  Open 9:00 to 5:00   |  Open 9:00 to 5:00  </div><div class="marquee_content">|    Open 9:00 to 5:00  |  Open 9:00 to 5:00  |  Open 9:00 to 5:00  |  Open 9:00 to 5:00  |  Open 9:00 to 5:00  |  Open 9:00 to 5:00  |  Open 9:00 to 5:00 </div>
 
-        <div id = "footer">
-			<ul>
-				<li>
-					<a>Artists</a>
-				</li>
-				<li>
-					<a>Artwork</a>
-				</li>
-				<li>
-					<a>About</a>
-				</li>
-			</ul>
+    <h2>Explore the Collection</h2>
+    <div class ="row">
+      <div class="image_element">
+        <img />
+        <h3>Lorem Ipsum</h3>
+        <p>Here is some text. here is some text.</p>
+      </div>
+      <div class="image_element">
+        <img />
+        <h3>Lorem Ipsum</h3>
+        <p>Here is some text. here is some text.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="image_element">
+        <img />
+        <h3>Lorem Ipsum</h3>
+        <p>Here is some text. here is some text.</p>
+      </div>
+      <div class="image_element">
+        <img />
+        <h3>Lorem Ipsum</h3>
+        <p>Here is some text. here is some text.</p>
+      </div>
+    </div>
 
-			<div id = "vertical"></div>
-			
-			<button><- To Top </button>
+    <div id = "newsletter_home">
+      <h2>Stay Connected</h2>
+      <p>
+        Learn more about our exhibitions, news, programs, and special offers.
+      </p>
+      <form>
+        <input id = "email" type="email" name="email" /><input id = "submit" type="submit" value="Sign Up" />
+      </form>
+    </div>
 
-			<aside>
-				
-				<br>
-					<form>
-						<label>Get the Newsletter</label>
-						<br>
-						<input type = "email" name = "email"/>
-						<input type = "button" name = "subscribe" value = ">">
-					</form>
+    <div id="footer">
+      <ul>
+        <li>
+          <a>Artists</a>
+        </li>
+        <li>
+          <a>Artwork</a>
+        </li>
+        <li>
+          <a>About</a>
+        </li>
+      </ul>
 
-					<a href="mailto:farooqhaider561@gmail.com">Get in touch.</a>
+      <div id="vertical"></div>
 
-					<div id = "links">
-					<a href = "https://www.instagram.com/">
-						<img src="../images/icons8-instagram-circle.svg" alt="insta_logo" width="35" height="35">
-					</a>
-					<a href = "https://www.facebook.com/">
-						<img src="../images/icons8-facebook.svg" alt="insta_logo" width="35" height="35">
-					</a>
-					<a href = "https://www.twitter.com/">
-						<img src="../images/icons8-twitter-circled.svg" alt="insta_logo" width="35" height="35">
-					</a>
-					</div>
-			</aside>
-			
-		</div>
-		
-	</body>
-    </body>
+      <button><- To Top</button>
+
+      <aside>
+        <br />
+        <form>
+          <label>Get the Newsletter</label>
+          <br />
+          <input type="email" name="email" />
+          <input type="button" name="subscribe" value=">" />
+        </form>
+
+        <a href="mailto:farooqhaider561@gmail.com">Get in touch.</a>
+
+        <div id="links">
+          <a href="https://www.instagram.com/">
+            <img
+              src="../images/icons8-instagram-circle.svg"
+              alt="insta_logo"
+              width="35"
+              height="35"
+            />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img
+              src="../images/icons8-facebook.svg"
+              alt="insta_logo"
+              width="35"
+              height="35"
+            />
+          </a>
+          <a href="https://www.twitter.com/">
+            <img
+              src="../images/icons8-twitter-circled.svg"
+              alt="insta_logo"
+              width="35"
+              height="35"
+            />
+          </a>
+        </div>
+      </aside>
+    </div>
+  </body>
 </html>

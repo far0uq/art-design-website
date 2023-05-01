@@ -1,13 +1,32 @@
-.artist_block{
-    border-top: 1px solid black;
+body div #page_links{
     width:70%;
-    margin:auto;
-    padding:25px 0px;
+    margin:0px auto 30px auto;
+    text-align: right;
+    
+}
+
+body div #page_links a{
+    color:black;
+    border:2px solid black;
+    font-size:18px;
+    font-family:fontForButton;
+    padding:2px 10px;
+    margin-left:10px;
+}
+
+body div #page_links a:visited{
+    color:black;
+}
+
+body div #page_links a:hover{
+    background-color: black;
+    color:white;
 }
 
 body{
     width:100%;
 }
+
 
 #filter-bar{
     display: flex;
@@ -33,6 +52,13 @@ body{
 #filter-bar > button:hover{
     background-color: black;
     color:rgb(164, 234, 164);
+}
+
+.artist_block{
+width:70%;
+margin:auto;
+border-top:1px solid black;
+padding:25px 0px;
 }
 
 .artist_block > h1 > a{

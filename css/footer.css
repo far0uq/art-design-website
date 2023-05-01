@@ -5,55 +5,62 @@ body {
 
 #footer {
   background: #ebda9e;
-  display: flex;
   justify-content: space-between;
-  font-family: myFirstFont;
-  padding: none;
+  padding: 60px 0px;
   height: 220px;
   width:100%;
 }
 
-@font-face {
-  font-family: myFirstFont;
-  src: url(../fonts/AvenirLTProBlack.otf);
+#footer > div{
+  display: flex;
+  width:80%;
+  margin:auto;
 }
 
-#footer li {
+@font-face {
+  font-family: fontForFooter;
+  src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-bold.otf);
+}
+
+#footer > div li {
+  font-family: fontForFooter;
   list-style: none;
   position:relative;
-  font-size: 20px;
+  font-size: 30px;
   padding-top: 8px;
 }
 
-#footer > ul {
-  margin-left: 15px;
-  margin-top: 65px;
+#footer > div ul {
+  width:70%;
+  margin:auto;
 }
 
-#footer > #vertical {
+#footer > div #vertical {
   border: 0.5px solid black;
   height: 130px;
   margin-top: 30px;
-  margin-left: 1050px;
+  margin-left: 900px;
 }
 
-#footer aside {
+#footer >div aside {
   font-size: 20px;
-  margin-top: 10px;
-  margin-right:300px;
+  margin:0px 200px 0px 100px;
 }
 
 aside > #links {
-  margin-top: 0px;
+  margin:5px 0px 0px 30px;
 }
 
-aside a{
+aside > a{
     text-decoration: none;
     color:rgb(103, 36, 9);
+    margin-left:30px;
+    font-size:30px;
+    font-family: fontForFooter;
 }
 
 
-#footer > button {
+#footer > div button {
   background-color: #ebda9e;
   color: black;
   border: none;
@@ -63,16 +70,31 @@ aside a{
   transform: rotate(90deg);
 }
 
-aside > form > input[name = "email"]{
-    border: 0.5px solid whitesmoke;
-    height:30px;
-    width:200px;
+#footer_newsletter_heading{
+  font-family:fontForFooter;
+  font-size:22px;
 }
 
-aside > form > input[name = "subscribe"]{
+@font-face {
+  font-family: fontForNewsletterFooterHeading;
+  src: url(../fonts/Demo-Arpona/Fontspring-DEMO-arpona-regular.otf);
+}
+
+aside > form input[name = "email"]{
+    border: 0.5px solid whitesmoke;
+    height:40px;
+    width:300px;
+}
+
+#form_inputs{
+  display: flex;
+  margin:15px 0px;
+}
+
+aside > form input[name = "subscribe"]{
     border: none;
     background-color:#ebda9e;
-    color:white;
-    padding-left:0px;
-    font-size: 20px;
+    color:black;
+    padding-left:10px;
+    font-size: 30px;
 }

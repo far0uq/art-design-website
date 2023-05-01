@@ -13,6 +13,7 @@
   height: 160px;
   margin: auto;
   transition: height 0.5s ease-out;
+  z-index:10;
 }
 
 #header > #menu > h1 {

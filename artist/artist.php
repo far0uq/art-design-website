@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../css/about.css" />
   <link rel="stylesheet" href="../css/artist.css" />
   <link rel="stylesheet" href="../css/filter.css" />
+  <link rel="icon" type="image/ico" href="../images/favicon/favicon-32x32.png">
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="../js/dynamic_menu.js"></script>
   <script src="../js/filter.js"></script>

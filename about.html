@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/about-page.css" />
-	<script src = "node_modules/jquery/dist/jquery.min.js"></script>
-	<script src = "js/dynamic_menu.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/dynamic_menu.js"></script>
   </head>
 
   <body>
@@ -16,14 +16,14 @@
       <div id="bar-at-top"></div>
 
       <div id="menu">
-        <h1><a href = "index.html">Ostania Art Gallery</a></h1>
+        <h1><a href="index.html">Ostania Art Gallery</a></h1>
         <ul>
           <li><a href="artist/artist.php">Artists</a></li>
           <li><a href="artwork/artwork.html">Gallery</a></li>
           <li><a href="#">About</a></li>
         </ul>
       </div>
-	  <div id = "line"></div>
+      <div id="line"></div>
       <div id="breadcrumbs"></div>
     </div>
 
@@ -32,35 +32,59 @@
     </section>
 
     <div id="main_body">
+      <h1>About Ostania Art Gallery</h1>
       <p>
-        The National Gallery of Art, founded as a gift to the nation, serves as
-        a center of visual art, education, and culture. Our collection of more
-        than 150,000 paintings, sculpture, decorative arts, photographs, prints,
-        and drawings spans the history of Western art and showcases some of the
-        triumphs of human creativity. Across 363 days a year, the National
-        Gallery offers a full spectrum of special exhibitions and public
-        programs free of charge.
+        Welcome to Ostania Art Gallery, where art meets culture in the heart of Berlint. Our gallery boasts a diverse collection of exquisite artworks, ranging from classical to contemporary pieces, all curated with the utmost care and precision. Located in the heart of Ostania, our gallery showcases a stunning array of paintings, sculptures, and photographs that reflect the rich history and cultural heritage of the region. We take pride in promoting local artists and providing them with a platform to showcase their talents to the world.
       </p>
-      <hr />
       <section>
-        <div class="about_mod">
-          <h1>Directors Message</h1>
-        </div>
-		<div class="about_mod">
-          <h1>Leadership</h1>
-        </div>
-		<div class="about_mod">
-          <h1>Mission, Vision, Values</h1>
-        </div>
-		<div class="about_mod">
-          <h1>Community</h1>
-        </div>
-		<div class="about_mod">
-          <h1>History</h1>
+        <div id="row">
+          <div class="about_mod">
+            <img
+              src="./images/about_pics/director.png"
+              style="height: 300px; width: 400px; object-fit: cover"
+            />
+            <h1>Directors Message</h1>
+          </div>
+
+          <div class="about_mod">
+            <img
+              src="./images/about_pics/leadership.png"
+              style="height: 300px; width: 400px; object-fit: cover"
+            />
+            <h1>Leadership</h1>
+          </div>
+
+          <div class="about_mod">
+            <img
+              src="./images/about_pics/mission.png"
+              style="height: 300px; width: 400px; object-fit: cover"
+            />
+            <h1>Mission, Vision, Values</h1>
+          </div>
+
         </div>
 
+        <div id="row">
+          <div class="about_mod">
+            <img
+              src="./images/about_pics/crowd.jpg"
+              style="height: 300px; width: 400px; object-fit: cover"
+            />
+            <h1>Community</h1>
+          </div>
+
+          <div class="about_mod">
+            <img
+              src="./images/about_pics/history.jpg"
+              style="height: 300px; width: 400px; object-fit: cover"
+            />
+            <h1>History</h1>
+          </div>
+        </div>
       </section>
     </div>
+
+    <div id = "whitespace"></div>
 
     <div id="footer">
       <div>
@@ -97,7 +121,7 @@
           <div id="links">
             <a href="https://www.instagram.com/">
               <img
-                src="../images/icons8-instagram-circle.svg"
+                src="images/icons8-instagram-circle.svg"
                 alt="insta_logo"
                 width="30"
                 height="30"
@@ -105,7 +129,7 @@
             </a>
             <a href="https://www.facebook.com/">
               <img
-                src="../images/icons8-facebook.svg"
+                src="images/icons8-facebook.svg"
                 alt="insta_logo"
                 width="30"
                 height="30"
@@ -113,7 +137,7 @@
             </a>
             <a href="https://www.twitter.com/">
               <img
-                src="../images/icons8-twitter-circled.svg"
+                src="images/icons8-twitter-circled.svg"
                 alt="insta_logo"
                 width="30"
                 height="30"
@@ -125,5 +149,6 @@
     </div>
 
     <script src="js/breadcrumbs.js"></script>
+    <script src = "js/color_bar_controller.js"></script>
   </body>
 </html>

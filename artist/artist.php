@@ -87,6 +87,7 @@
             echo '<div class="artist_block">';
             echo '<h2>' . $row['category_name'] . '</h2>';
             echo '<h1><a href="#">' . $row['artist_name'] . '</a></h1>';
+            echo '<h5>' . $row['artist_desc'] . '</h5>';
             echo '</div>';
             echo '</tr>';
           }
@@ -153,6 +154,7 @@
   </div>
 
   <script src="../js/breadcrumbs.js"></script>
+  <script src = "../js/color_bar_controller.js"></script>
 </body>
 
 </html>
